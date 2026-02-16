@@ -1,12 +1,4 @@
-Exploring the project structure and key files to produce a detailed README and code-flow explanation.
 
-
-[34 tools called]
-
-
-Here’s a structured README you can drop into the repo. (I’m in Ask mode, so this is text only—you can paste it into `README.md` yourself or switch to Agent mode to have it written for you.)
-
----
 
 # SkillBridge API — README
 
