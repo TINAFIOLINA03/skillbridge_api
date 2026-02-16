@@ -1,0 +1,32 @@
+# Copy to application.yaml and set env vars (DB_URL, DB_USERNAME, DB_PASSWORD, JWT_SECRET).
+# application.yaml is gitignored so your secrets are not committed.
+spring:
+  application:
+    name: skillbridge-api
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
